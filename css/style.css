@@ -6,6 +6,36 @@
     box-sizing: border-box;
 }
 
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(18, 18, 62);
+    /* Matches your nav/footer background */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(30, 33, 103);
+    /* Matches your button/box background */
+    border-radius: 10px;
+    border: 2px solid rgb(18, 18, 62);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(170, 107, 228);
+    /* Matches your purple accent color */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(30, 33, 103) rgb(18, 18, 62);
+}
+
 body {
     background-color: rgb(0, 0, 33);
     color: white;
@@ -132,9 +162,17 @@ nav ul li a:hover::after {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .text-purple {
@@ -181,7 +219,7 @@ nav ul li a:hover::after {
 
 .vertical:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .image-top {
@@ -215,7 +253,7 @@ footer {
     gap: 30px;
 }
 
-.footer > div {
+.footer>div {
     width: 200px;
     margin-bottom: 30px;
 }
@@ -248,7 +286,7 @@ footer {
     text-align: center;
     color: gray;
     padding: 20px 0;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Back to Top Button */
