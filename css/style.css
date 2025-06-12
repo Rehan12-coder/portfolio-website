@@ -21,7 +21,6 @@ nav {
     align-items: center;
     height: 90px;
     background-color: rgb(18, 18, 62);
-    position: fixed;
     width: 100%;
     z-index: 1000;
     padding: 0 5%;
